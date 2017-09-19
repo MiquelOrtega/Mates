@@ -30,7 +30,7 @@ es penjarà a totes dues subcarpetes.
 3-Es penjarà el document amb el nom AAMMDDNom, on la data correspon a la primera en què
 van ser escrits aquells apunts, i Nom és el nom de l'autor. Per exemple, el Miquel hauria
 d'escriure 170915Miquel si pengés uns apunts que comencessin el 15 de setembre. Per convertir
-fitxers jpeg a un unic pdf, canvieu-ne els noms de manera que estiguen en ordre alfabètic i
+fitxers jpeg a un unic pdf, canvieu-ne els noms de manera que estiguin en ordre alfabètic i
 executeu (en linux): convert *.jpeg nom.pdf
 
 
