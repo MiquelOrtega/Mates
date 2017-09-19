@@ -10,7 +10,7 @@ permet donar una ullada i, si vol, penjar apunts).
 A cada carpeta hi trobareu (o fareu, en cas de no ser-hi) subcarpetes que divideixen
 els apunts corresponents per temes, un fitxer on es descriu a grans trets
 el que hem fet (anomenat index) i un fitxer on escriure coses interessants
-(anomenat coses). Eventualment es podrien penjar petites ajudes sobre les pràctiques
+(anomenat README.md). Eventualment es podrien penjar petites ajudes sobre les pràctiques
 de la FIB.
 
 NORMES SOBRE PUJADA D'APUNTS:
