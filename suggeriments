@@ -5,3 +5,4 @@ Anar a classe
 Estudiar
 Entendre multilineal
 Apunts de multilineal a latex
+Per convertir fitxers jpeg a un unic pdf, canvieu-ne els noms de manera que estiguen en ordre alfabètic i executeu (en linux): convert *.jpeg nom.pdf
