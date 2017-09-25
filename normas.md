@@ -6,7 +6,7 @@ LaTeX.
 ### Recuerda identar el código y hacer saltos de línea regularmente
 
 ## Atención
-**Estas normas están sujetas al uso de la plantilla que
+**Estas normas están sujetas al uso de la [plantilla](https://github.com/MiquelOrtega/Mates/blob/master/plantilla.tex) que
 hemos creado y bajo ningún concepto se deben tomar como
 unas directrices a seguir fuera de este contexto ni
 se debe asumir que sean "buenas prácticas".**
@@ -21,7 +21,8 @@ se debe asumir que sean "buenas prácticas".**
 
 ## Proposiciones, teoremas y demás
 
-En nuestra plantilla, hemos creado unos entornos para
+En nuestra [plantilla](https://github.com/MiquelOrtega/Mates/blob/master/plantilla.tex),
+hemos creado unos entornos para
 recoger los casos de entradas más comunes, aquí se hace un
 listado de todas ellas.
 
@@ -111,7 +112,8 @@ importante es que no es necesario añadir la palabra
 
 ## Comandos útiles
 Aquí detallamos una lista de los commandos que hemos añadido
-a la plantilla con el objeto de simplificar la esritura.
+a la [plantilla](https://github.com/MiquelOrtega/Mates/blob/master/plantilla.tex)
+con el objeto de simplificar la esritura.
 Es importante saber que **esta lista no está cerrada**,
 sientete libre de añadir los commandos que creas convenientes
 (siempre y cuando sean utiles de verdad y no se utilicen tan
