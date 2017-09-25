@@ -49,7 +49,9 @@ git push origin master
 i escriure el correu i la contrasenya de github, cosa que actualitzara el repositori.
 
 Per incorporar els canvis que han fet altres al repositori online al teu repositori local, s'ha d'escriure
+```
 git pull
+```
 
 ### Altres instruccions útils són:
 
