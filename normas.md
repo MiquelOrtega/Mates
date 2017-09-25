@@ -28,28 +28,28 @@ Aunque la mayoría de entornos tienen un titulo opcional, se
 recomienda no abusar de ellos y reservarlos para casos
 especiales.
 
-#### Lemas
+### Lemas
 ```tex
 \begin{lema}[tituloOpcional]
   ...
 \end{lema}
 ```
 
-#### Observación
+### Observación
 ```tex
 \begin{obs}[tituloOpcional]
   ...
 \end{obs}
 ```
 
-#### Proposición
+### Proposición
 ```tex
 \begin{prop}[tituloOpcional]
   ...
 \end{prop}
 ```
 
-#### Demostración
+### Demostración
 Aunque se puede añadir un título opcional de la misma forma
 que con el resto de entornos, recomendamos no hacerlo en
 este caso. Colocar la demostración debajo de su proposición
@@ -61,28 +61,28 @@ identificarla.
 \end{proof}
 ```
 
-#### Definición
+### Definición
 ```tex
 \begin{defi}[tituloOpcional]
   ...
 \end{defi}
 ```
 
-#### Corolario
+### Corolario
 ```tex
 \begin{col}[tituloOpcional]
   ...
 \end{col}
 ```
 
-#### Ejemplo
+### Ejemplo
 ```tex
 \begin{example}[tituloOpcional]
   ...
 \end{example}
 ```
 
-#### Ejercicio
+### Ejercicio
 Es importante distinguir entre ejemplos y ejercicios. Los
 ejemplos son casos particulares resueltos, sin embargo, los
 ejercicios están sin resolver. Atención **NO resolver los
@@ -96,7 +96,7 @@ resolver son una buena forma de aprender.
 \end{ej}
 ```
 
-#### Teorema
+### Teorema
 Aunque el título se pase en este entorno como parámetro
 opcional, **Es obligatorio nominar los teoremas**. Ya que
 los teoremas aparecen en el índice principal. Una observación
@@ -118,7 +118,7 @@ solo en un caso concreto). Además **recuerda hacer el commit
 de la forma correcta** (si no sabes como, mira
 [aquí](TODO add url)) y **añadir a esta sección el comando**.
 
-#### Conjuntos
+### Conjuntos
 Estos comandos nos permiten tener un acceso más rápido a los
 principales conjuntos.
 
@@ -132,7 +132,7 @@ principales conjuntos.
 | \E | Un espacio vectorial |
 | \Id | El operador identiad |
 
-#### Otras utilidades
+### Otras utilidades
 | Comando | Argumentos | Descripción |
 | :--- | :--- | :--- |
 | \ita | 1 | Pone en texto itálico el argumento |
@@ -146,7 +146,7 @@ principales conjuntos.
 Aquí se detalla una serie de fragmentos que suelen comunes
 en la escritura de los apuntes.
 
-#### Declaración de funciones
+### Declaración de funciones
 Aquí detallamos una función que va de los enteros a los
 reales y que envía *x* a *f(x)*
 ```tex
@@ -155,7 +155,7 @@ reales y que envía *x* a *f(x)*
   x &\mapsto f(x)
 \end{aligned}
 ```
-#### Listas no ordenadas
+### Listas no ordenadas
 Para declarar listas no ordenadas, usamos el entorno
 *itemize*
 ```tex
