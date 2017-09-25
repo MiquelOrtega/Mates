@@ -54,8 +54,8 @@ git pull
 ### Altres instruccions útils són:
 
 | Ordre | Descripció |
-| :--- | :--- |
-| `git commit -am "DESCRIPCIO COMMIT"` | afegeix tots els fitxer modificats al commit directament |
+| --- | --- |
+| ```git commit -am "DESCRIPCIO COMMIT"``` | afegeix tots els fitxer modificats al commit directament |
 | ```git rm nom_fitxer``` | fa rm i git add en un sol pas |
 | ```git mv nom_fitxer``` | fa mv i git add en un sol pas |
 | ```git status``` | dona informació sobre l'estat del repositori local en comparació al online |
