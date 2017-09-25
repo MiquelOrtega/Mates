@@ -130,6 +130,7 @@ principales conjuntos.
 | \cx | Conjunto de los números complejos |
 | \real | Conjunto de los números reales |
 | \E | Un espacio vectorial |
+| \Id | El operador identiad |
 
 #### Otras utilidades
 | Comando | Argumentos | Descripción |
