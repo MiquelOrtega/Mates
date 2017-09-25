@@ -15,6 +15,7 @@ se debe asumir que sean "buenas prácticas".**
 * **Proposiciones, teoremas y demás**
 * **Comandos útiles**
 * **Fragmentos comunes**
+* **\input**
 * **Referencias**
 * **tikz**
 
@@ -116,7 +117,8 @@ sientete libre de añadir los commandos que creas convenientes
 (siempre y cuando sean utiles de verdad y no se utilicen tan
 solo en un caso concreto). Además **recuerda hacer el commit
 de la forma correcta** (si no sabes como, mira
-[aquí](TODO add url)) y **añadir a esta sección el comando**.
+[aquí](https://github.com/MiquelOrtega/Mates/blob/master/commits.md))
+y **añadir a esta sección el comando**.
 
 ### Conjuntos
 Estos comandos nos permiten tener un acceso más rápido a los
@@ -130,7 +132,6 @@ principales conjuntos.
 | \cx | Conjunto de los números complejos |
 | \real | Conjunto de los números reales |
 | \E | Un espacio vectorial |
-| \Id | El operador identiad |
 
 ### Otras utilidades
 | Comando | Argumentos | Descripción |
@@ -178,7 +179,7 @@ la siguiente instrucción
 \end{itemize}
 ```
 
-#### Listas ordenadas
+### Listas ordenadas
 Para hacer listas ordenadas, usamos el entorno *enumerate*
 ```tex
 \begin{enumerate}[i)]
@@ -192,7 +193,7 @@ es el recomendado para proposiciones de varias
 declaraciones, aunque se puede usar también *a)* para
 letras o *1)* para números.
 
-#### Ecuaciones en varias líneas
+### Ecuaciones en varias líneas
 A menudo, nos encontramos en una situación en la cual
 una ecuación no nos cabe en una línea por temas de
 espacio, entonces, usamos el siguiente entorno
@@ -211,7 +212,7 @@ utilizando, siempre que sea posibl
 \]
 ```
 
-#### Matrices
+### Matrices
 Para declarar una matriz usamos
 ```tex
 \begin{pmatrix}
@@ -226,7 +227,7 @@ Para matrices con corchetes, podemos usar el entorno
 *bmatrix*, que se comporta exactamente igual que
 *pmatrix* que usamos para matrices con paréntesis.
 
-#### Matrices con rayas
+### Matrices con rayas
 De nuevo, recordemos que podemos usar el entorno
 *bmatrix* de la misma manera.
 
@@ -246,7 +247,7 @@ Es importante notar que no colocamos una nueva fila
 después de **\hline**.
 
 
-#### Casos
+### Casos
 Es común encontrarnos con una función definida a trozos o
 una situación en la cual necesitamos agrupar casos, para
 ello, usaremos el entorno **cases**
@@ -260,7 +261,7 @@ Como se puede observar, separamos los casos con **\\\**.
 Existe también un entorno que se comporta igual que este,
 pero con la llave a la derecha, *rcases*.
 
-#### Número de elementos
+### Número de elementos
 Amenudo nos encontramos con situaciones en las que tenemos
 que especificar el número de elementos en una suma, o en
 un producto. Para esto usamos **\overbrace** y
@@ -271,7 +272,7 @@ ejemplo el producto de *f* realizado *p* veces
 \overbrace{f \cdots f}{p}
 ```
 
-#### Condiciones de varias líneas
+### Condiciones de varias líneas
 No es raro encontrarse en situaciones en las cuales tenemos
 dos o más variables recorriendo cosas distintas, de modo
 que necesitamos varias condiciones, para ello usamos el
@@ -283,12 +284,24 @@ prod(n,r) = nr \quad
 ```
 Dentro de **\substack** separamos las líneas por **\\\**.
 
+## \input
+**\input** es un comando que sirve para incluir los
+contenidos de otro documento en el actual. Por ejemplo
+```tex
+\input{tema_uno}
+```
+Incluye los contenidos del documento *tema_uno.tex*
+(que se encuentra en la misma carpeta) en el documento
+actual. Este comando es usado para reducir el tamaño de los
+documentos y facilitar así su edición. Para estos apuntes,
+hemos decidido hacer un documento por tema.
+
 ## Referencias
 
 En esta sección daremos las guías para hacer referencias
 tanto a dentro del documento como a fuera del mismo.
 
-#### Referecias a dentro del mismo documento
+### Referecias a dentro del mismo documento
 Para referenciar un teorema, una proposición o cualquier
 otra cosa, debemos añadir la etiqueta **\label** a aquello
 que queramos referenciar. Por ejemplo, si queremos
@@ -311,7 +324,7 @@ que toma un argumento. Este argumento es precisamente el
 mismo que hemos puesto en **\label**, por eso es importante
 que sea único.
 
-#### Referencias a fuera del documento
+### Referencias a fuera del documento
 Aquí solo cubrimos la referencia a URLs, el resto de casos
 no los cubrimos ya que no son muy comunes.
 
@@ -328,7 +341,6 @@ El paquete *tikz* es un paquete muy potente usado para la
 generación de gráficos. Aquí solo damos unas leves
 pinceladas de cómo usar este paquete, para hacer un grafo
 muy simple.
-
 ![grafo](https://github.com/MiquelOrtega/Mates/blob/master/grafo.png)
 
 Para hacer este grafo, usamos el entorno *tikzpicture*
