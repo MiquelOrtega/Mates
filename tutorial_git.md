@@ -54,10 +54,10 @@ git pull
 Altres instruccions útils són:
 | Comando | Descripción
 | --- | --- |
-| ``` git commit -am "DESCRIPCIO COMMIT" ``` | afegeix tots els fitxer modificats al commit directament|
-git rm nom_fitxer   ---  fa rm i git add en un sol pas
-git mv nom_fitxer   ---  fa mv i git add en un sol pas
-git status   ---  dona informació sobre l'estat del repositori local en comparació al online
+| ```git commit -am "DESCRIPCIO COMMIT"``` | afegeix tots els fitxer modificats al commit directament |
+| ```git rm nom_fitxer``` | fa rm i git add en un sol pas |
+| ```git mv nom_fitxer``` | fa mv i git add en un sol pas |
+| ```git status``` | dona informació sobre l'estat del repositori local en comparació al online |
 
 Per més informació, llegir https://git-scm.com/docs/gittutorial o https://git-scm.com/book/en/v2/ sobretot
 2.1, 2.2 i 2.5 d'aquest últim.
