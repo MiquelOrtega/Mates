@@ -4,14 +4,12 @@ carpetes).
 
 Carpeta compartida on es poden penjar apunts i altres recursos (links a
 pàgines que vagin bé, bibliografia, informació important...) sobre cada assignatura
-per compartir amablement amb els companys de mates-info (A l'Anglada se li
-permet donar una ullada i, si vol, penjar apunts).
+per compartir amablement amb els companys de mates.
 
 A cada carpeta hi trobareu (o fareu, en cas de no ser-hi) subcarpetes que divideixen
 els apunts corresponents per temes, un fitxer on es descriu a grans trets
 el que hem fet (anomenat index) i un fitxer on escriure coses interessants
-(anomenat README.md). Eventualment es podrien penjar petites ajudes sobre les pràctiques
-de la FIB.
+(anomenat README.md). 
 
 NORMES SOBRE PUJADA D'APUNTS:
 
@@ -35,8 +33,8 @@ alfabètic i executeu (en linux): convert *.jpg nom.pdf
 
 
 
-Qualsevol canvi al procediment del drive ha de ser sotmès a votació als membres
-de mates-info. Tot i així, tots teniu drets d'edició i en particular podeu canviar
+Qualsevol canvi al procediment del repositori ha de ser sotmès a votació als editors d'aquest. 
+Tot i així, tots teniu drets d'edició i en particular podeu canviar
 aquest fitxer i fer que estableixi una altra cosa. Els suggeriments i possibles ampliacions
 es poden afegir al fitxer anomenat suggeriments que trobareu a aquesta carpeta.
 
