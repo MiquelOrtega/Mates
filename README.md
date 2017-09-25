@@ -29,7 +29,7 @@ d'escriure 170915Miquel si pengés uns apunts que comencessin el 15 de setembre.
 diverses imatges jpeg a un únic pdf, canvieu-ne els noms de manera que estiguen en ordre
 alfabètic i executeu (en linux): convert *.jpg nom.pdf
 
-## Obligatorio leer normas.md, commits.md y tutorial_git
+## Obligatorio leer normas.md, commits.md y tutorial_git,d
 
 ## Atención
 Qualsevol canvi al procediment del repositori ha de ser sotmès a votació als editors d'aquest. 
