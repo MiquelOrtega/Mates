@@ -39,3 +39,4 @@ aquest fitxer i fer que estableixi una altra cosa. Els suggeriments i possibles 
 es poden afegir al fitxer anomenat suggeriments que trobareu a aquesta carpeta.
 
 SOCIALISME O BARBÀRIE (ups, se m'ha colat).
+UNIVERSO SIMPSON O BARBARIE (ups, ya van dos)
