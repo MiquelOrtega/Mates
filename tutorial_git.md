@@ -52,6 +52,7 @@ Per incorporar els canvis que han fet altres al repositori online al teu reposit
 git pull
 
 Altres instruccions útils són:
+
 | Ordre | Descripció |
 | :--- | :--- |
 | a | b |
