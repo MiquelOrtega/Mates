@@ -1,4 +1,4 @@
-# Descripción
+# Descripció
 
 Carpeta compartida on es poden penjar apunts i altres recursos (links a
 pàgines que vagin bé, bibliografia, informació important...) sobre cada assignatura
@@ -29,13 +29,13 @@ d'escriure 170915Miquel si pengés uns apunts que comencessin el 15 de setembre.
 diverses imatges jpeg a un únic pdf, canvieu-ne els noms de manera que estiguen en ordre
 alfabètic i executeu (en linux): convert *.jpg nom.pdf
 
-## Obligatorio leer normas.md, commits.md y tutorial_git,d
+## Obligatori llegir normas.md, commits.md y tutorial_git.md
 
-## Atención
+## Atenció
 Qualsevol canvi al procediment del repositori ha de ser sotmès a votació als editors d'aquest. 
 Tot i així, tots teniu drets d'edició i en particular podeu canviar
 aquest fitxer i fer que estableixi una altra cosa. Els suggeriments i possibles ampliacions
 es poden afegir al fitxer anomenat suggeriments que trobareu a aquesta carpeta.
 
 #### SOCIALISME O BARBÀRIE (ups, se m'ha colat).
-#### UNIVERSO SIMPSON O BARBARIE (ups, ya van dos)
+#### UNIVERSO SIMPSON O BARBARIE (ups, ya van dos).
