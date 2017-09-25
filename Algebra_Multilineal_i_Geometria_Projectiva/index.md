@@ -1,10 +1,10 @@
 ### (A la guia d'avaluació hi ha un índex més formal)
 
-##TEMA 0:
+## TEMA 0:
 * ### Espai Dual:
-i. #### Expressió en coordenades, canvis de bases...
-ii. #### Dual d'una aplicació lineal
-iii. #### Bidual
+    * #### Expressió en coordenades, canvis de bases...
+    * #### Dual d'una aplicació lineal
+    * #### Bidual
 
 * ### Formes Bilineals:
     i. Expressió en forma matricial, canvis de bases...
