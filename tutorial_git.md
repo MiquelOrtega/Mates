@@ -52,7 +52,7 @@ Per incorporar els canvis que han fet altres al repositori online al teu reposit
 git pull
 
 Altres instruccions útils són:
-| Comando | Descripción
+| Comando | Descripción |
 | --- | --- |
 | ```git commit -am "DESCRIPCIO COMMIT"``` | afegeix tots els fitxer modificats al commit directament |
 | ```git rm nom_fitxer``` | fa rm i git add en un sol pas |
