@@ -36,7 +36,7 @@ git add NOMS_FITXERS_CANVIATS
 ```
 Per dir a git que un vol que es registrin els canvis fets. 
 
-Despres de fer tots els canvis necessaris, s'ha d'escriure
+Després de fer tots els canvis necessaris, s'ha d'escriure
 ```
 git commit -m "DESCRIPCIO DELS CANVIS FETS"
 ```
