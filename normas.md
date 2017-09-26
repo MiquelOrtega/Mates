@@ -207,7 +207,7 @@ espacio, entonces, usamos el siguiente entorno
 ```
 Es importante no abusar de este entorno y reservarlo para
 los casos en los que sea estrictamente necesario,
-utilizando, siempre que sea posibl
+utilizando, siempre que sea posible
 ```tex
 \[
   equation
@@ -223,7 +223,7 @@ Para declarar una matriz usamos
 \end{pmatrix}
 ```
 Como se puede ver, separamos las columnas por **&** y las
-filas por **\\\**.
+filas por **\\\\**.
 
 Para matrices con corchetes, podemos usar el entorno
 *bmatrix*, que se comporta exactamente igual que
