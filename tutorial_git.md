@@ -51,7 +51,16 @@ i escriure el correu i la contrasenya de github, cosa que actualitzara el reposi
 Per incorporar els canvis que han fet altres al repositori online al teu repositori local, s'ha d'escriure
 ```
 git pull
+
 ```
+Sovint, al fer un push, la comanda serà denegada. En molts casos és perquè algú altre ha fet un push abans
+que un mateix, de manera que el repositori local no està al dia del que és en línia, cosa que prohibeix fer
+un nou push. Aleshores, en comptes de pull es farà
+```
+git pull --rebase
+
+```
+Que deixarà una llista de commits més neta, evitant un merge innecessari.
 
 ### Altres instruccions útils són:
 

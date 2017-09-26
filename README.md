@@ -12,11 +12,9 @@ el que hem fet (anomenat index) i un fitxer on escriure coses interessants
 # NORMES SOBRE PUJADA D'APUNTS:
 
 1. Si l'Ernesto està de bon humor, és preferible una versió a latex dels apunts. Si
-l'Ernesto no està de bon humor i un té temps, és preferible l'escaneig a la fotografia
-amb el mòbil. Si l'Ernesto no està de bon humor i un no té temps, és preferible
-donar els apunts al Miquel perquè els escanegi. Si l'Ernesto no està de bon humor,
-un no té temps, i un no vol veure el Miquel, pot pujar una foto (de moment jo pujaré el
-que trobi).
+l'Ernesto no està de bon humor i un té temps, un pot escanejar (amb resolució baixa a
+poder ser, si no ocupa massa) o fer una foto als seus apunts. Si no, li pot donar
+aquests apunts al Miquel per què ho faci ell.
 
 2. Es penjarà el document corresponent d'apunts a la subcarpeta que toqui, i se'n fara
 una de nova si no s'ajusta a les existents. Si un document conté elements pertanyents a

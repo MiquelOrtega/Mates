@@ -7,3 +7,5 @@
 * **Apunts de multilineal a latex**
 * **YASSSSS**
 * **Cianur**
+* **Parar de posar tonteries als suggeriments**
+* **Aprendre que el meta humor no és tan divertit**
