@@ -61,6 +61,7 @@ git pull --rebase
 
 ```
 Que deixarà una llista de commits més neta, evitant un merge innecessari.
+(Això no és cert per a tots els projectes, si amb el mètode de treball d'aquest, on no fem branching per simplicitat)
 
 ### Altres instruccions útils són:
 

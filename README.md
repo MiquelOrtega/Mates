@@ -13,7 +13,7 @@ el que hem fet (anomenat index) i un fitxer on escriure coses interessants
 
 1. Si l'Ernesto està de bon humor, és preferible una versió a latex dels apunts. Si
 l'Ernesto no està de bon humor i un té temps, un pot escanejar (amb resolució baixa a
-poder ser, si no ocupa massa) o fer una foto als seus apunts. Si no, li pot donar
+poder ser, en cas contrari ocupa massa) o fer una foto als seus apunts. Si no, li pot donar
 aquests apunts al Miquel per què ho faci ell.
 
 2. Es penjarà el document corresponent d'apunts a la subcarpeta que toqui, i se'n fara
