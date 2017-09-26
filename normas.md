@@ -144,6 +144,7 @@ principales conjuntos.
 | \vbrack | 1 | Coloca el argumento entre "<>" |
 | \determinant | 1 | El argumento puede pasarse en forma matricial. Coloca el determinante del argumento |
 | \abs | 1 | Coloca el valor absoluto del argumento |
+| \Id | 0 | Coloca la identidad |
 
 ## Fragmentos comunes
 Aquí se detalla una serie de fragmentos que suelen comunes
