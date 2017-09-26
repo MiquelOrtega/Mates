@@ -6,3 +6,4 @@
 * **Entendre multilineal**
 * **Apunts de multilineal a latex**
 * **YASSSSS**
+* **Cianur**
