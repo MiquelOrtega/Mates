@@ -134,6 +134,7 @@ principales conjuntos.
 | \cx | Conjunto de los números complejos |
 | \real | Conjunto de los números reales |
 | \E | Un espacio vectorial |
+| \k | Un cuerpo cualquiera |
 
 ### Otras utilidades
 | Comando | Argumentos | Descripción |
@@ -145,6 +146,8 @@ principales conjuntos.
 | \determinant | 1 | El argumento puede pasarse en forma matricial. Coloca el determinante del argumento |
 | \abs | 1 | Coloca el valor absoluto del argumento |
 | \Id | 0 | Coloca la identidad |
+| \bb | 1 | Coloca el argumento en funte de conjunto |
+| \cal | 1 | Coloca el argumento en fuente caligrafica |
 
 ## Fragmentos comunes
 Aquí se detalla una serie de fragmentos que suelen comunes
