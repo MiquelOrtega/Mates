@@ -134,6 +134,7 @@ principales conjuntos.
 | \cx | Conjunto de los números complejos |
 | \real | Conjunto de los números reales |
 | \E | Un espacio vectorial |
+| \Po | Un espacio proyectivo |
 | \k | Un cuerpo cualquiera |
 
 ### Otras utilidades
