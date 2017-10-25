@@ -2,90 +2,11 @@
  
 \usepackage[margin=0.8in]{geometry}
 \usepackage[pdftex]{hyperref}
-\usepackage{amsmath,amsthm,amssymb,graphicx,mathtools,tikz,hyperref,enumerate}
-\usepackage{mdframed,cleveref,cancel,stackengine,multicol}
+\usepackage{amsmath,amsthm,amssymb,mathtools,hyperref,enumerate,multicol,mdframed}
 
 \newmdenv[leftline=false,topline=false]{topright}
 \let\proof\relax
 \usepackage[utf8]{inputenc}
-\usetikzlibrary{positioning}
-\newcommand{\n}{\mathbb{N}}
-\newcommand{\z}{\mathbb{Z}}
-\newcommand{\q}{\mathbb{Q}}
-\newcommand{\cx}{\mathbb{C}}
-\newcommand{\real}{\mathbb{R}}
-\newcommand{\E}{\mathbb{E}}
-\newcommand{\F}{\mathbb{F}}
-\newcommand{\bb}[1]{\mathbb{#1}}
-\let\k\relax
-\newcommand{\k}{\mathbf{k}}
-\newcommand{\ita}[1]{\textit{#1}}
-\newcommand\inv[1]{#1^{-1}}
-\newcommand\setb[1]{\left\{#1\right\}}
-\newcommand{\vbrack}[1]{\langle #1\rangle}
-\newcommand{\determinant}[1]{\begin{vmatrix}#1\end{vmatrix}}
-\newcommand{\abs}[1]{\left\vert #1 \right\vert}
-\newcommand{\Po}{\mathbb{P}}
-\DeclareMathOperator{\Id}{Id}
-\DeclareMathOperator{\rg}{rang}
-\DeclareMathOperator{\car}{car}
-\DeclareMathOperator{\im}{Im}
-
-
-\hypersetup{
-	colorlinks,
-	linkcolor=blue
-}
- 
- \renewcommand*\contentsname{Contenidos}
-
-\newtheoremstyle{break}% name
-{}%         Space above, empty = `usual value'
-{}%         Space below
-{}% Body font
-{}%         Indent amount (empty = no indent, \parindent = para indent)
-{\bfseries}% Thm head font
-{}%        Punctuation after thm head
-{\newline}% Space after thm head: \newline = linebreak
-{#1 #2 \normalfont #3}%         Thm head spec
-
-\newtheoremstyle{breakthm}% name
-{}%         Space above, empty = `usual value'
-{}%         Space below
-{}% Body font
-{}%         Indent amount (empty = no indent, \parindent = para indent)
-{\bfseries}% Thm head font
-{}%        Punctuation after thm head
-{\newline}% Space after thm head: \newline = linebreak
-{#1 \normalfont #3 (#2)\addcontentsline{toc}{subsubsection}{#1 #3}}%         Thm head spec
-\newtheoremstyle{normal}% name
-{}%         Space above, empty = `usual value'
-{}%         Space below
-{}% Body font
-{}%         Indent amount (empty = no indent, \parindent = para indent)
-{\bfseries}% Thm head font
-{}%        Punctuation after thm head
-{5pt plus 1pt minus 1pt}% Space after thm head: \newline = linebreak
-{#1 #2 \normalfont #3}%         Thm head spec
-
-\theoremstyle{normal}
-\newtheorem{lema}{Lema}[subsection]
-\newtheorem{obs}[lema]{Observación}
-
-\theoremstyle{break}
-\newtheorem{prop}[lema]{Proposición}
-\newtheorem*{proof}{Demostración}
-\newtheorem{defi}[lema]{Definición}
-\newtheorem{col}[lema]{Corolario}
-\newtheorem{ej}[lema]{Ejercicio}
-\newtheorem{example}[lema]{Ejemplo}
-
-\theoremstyle{breakthm}
-\newtheorem{thm}[lema]{Teorema}
-
-\title{Formulari T2}
-\author{Oscar Benedito i Saura}
-\date{Octubre 2017}
  
 \begin{document}
 \begin{multicols}{2}
@@ -101,7 +22,7 @@
 
 $\tau_C = RC$, $q(0) = VC$
 
-\subsection*{Solenoides}
+\subsubsection*{Solenoides}
 
 \underline{Flux}: $\Phi = NBS = \frac{\mu_0 N^2SI}{l}$ \\
 \underline{Coeficient d'autoinducció}: $\frac{\Phi}{I} = \frac{\mu_0N^2S}{l}$ \\
@@ -119,7 +40,7 @@ $\tau_L = \frac{L}{R}$
 \subsection*{Corrent alterna}
 \underline{f.e.m. alterna}: $V(t) = V_0\text{cos}(\omega t+\varphi)$, $T = \frac{2\pi}{\omega}$, $I(t) = \frac{V(t)}{R} = \frac{V_0}{R}\text{cos}(\omega t + \varphi) = I_0\text{cos}(\omega t + \varphi)$ \\
 \underline{Flux}: $\Phi = BSN\text{cos}(\omega t+\theta)$, $B$ camp magnètic \\
-\underline{Ley Faraday}: $\epsilon(t) = V_0\text{sin}(\omega t + \theta_0$ \\
+\underline{Llei Faraday}: $\epsilon(t) = V_0\text{sin}(\omega t + \theta_0)$ \\
 \underline{Voltatge eficaç}: $V_{ef} = \frac{V_0}{\sqrt{2}}$ \\
 \underline{Intensitat eficaç}: $I_{ef} = \frac{I_0}{\sqrt{2}}$
 
@@ -138,7 +59,26 @@ Sigui $V(t) = V_0e^{i\omega t}$, llavors, $I = \frac{V_0}{i\omega L}e^{i\omega t
 
 \subsection*{Impedància. Llei d'Ohm}
 
+\underline{Llei d'Ohm}: $V = IZ$ \\
+\underline{Impedància}: $\bar{Z} = R + iX \begin{cases} \text{Resistència: } R \\ \text{Condensador: } -iX_C \\ \text{Inducció: } iX_L \end{cases}$
 
+\subsubsection*{Circuit LCR}
 
+\underline{Angle de fase}: tg$(\varphi)=\frac{X_L-X_C}{R}$ \\
+\underline{Corrent máxim}: $I_0 = \frac{\varepsilon_0}{Z}$
+
+\subsection*{Potència}
+
+\underline{Potència instantània}: $P(t) = V(t)I(t) = V_0I_0\text{cos}(\omega t)\text{cos}(\omega t - \varphi)$ \\
+\underline{Potència mitja}: $\frac{V_0I_0}{2\text{cos}(\varphi)} = V_{ef}I_{ef}\text{cos}(\varphi)$
+
+\subsubsection*{Potència en una resistència}
+
+\underline{Potència instanània}: $P(t) = V_0\text{cos}(\omega t)I_0\text{cos}(\omega t) = \frac{V_0^2}{R}\text{cos}^2(\omega t)$ \\
+\underline{Potència mitja}: $P = \frac{V_0^2}{2R}$ \\
+\underline{Valors eficaços}: $V_{ef} = \frac{V_0}{\sqrt{2}}$, $I_{ef} = \frac{I_0}{\sqrt{2}}$ \\
+\underline{Potència dissipada}: $P = \frac{V_{ef}^2}{R} = RI_{ef}^2$
+
+\section*{Pàgina 59 feta}
 \end{multicols}
 \end{document}
