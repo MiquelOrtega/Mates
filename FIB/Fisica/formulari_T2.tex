@@ -1,78 +1,74 @@
 \documentclass[12pt]{article}
  
-\usepackage[margin=0.8in]{geometry}
-\usepackage[pdftex]{hyperref}
-\usepackage{amsmath,amsthm,amssymb,mathtools,hyperref,enumerate,multicol,mdframed,xfrac}
+\usepackage[landscape,margin=0.5in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{amsmath,multicol,titlesec}
 
-\newmdenv[leftline=false,topline=false]{topright}
-\let\proof\relax
 \usepackage[utf8]{inputenc}
+\titlespacing{\section}{0pt}{5pt}{0pt}
+\titlespacing{\subsection}{0pt}{5pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{5pt}{0pt}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\bfseries}
+\setlength{\columnseprule}{1pt}
  
 \begin{document}
-\begin{multicols}{2}
-\subsection*{Circuits RC}
+\begin{multicols}{5}
+\section{Circuits RC}
 
-\begin{tabular}{|c|c|c|c|}
-    \hline
-    Càrrega & Descàrrega \\ \hline \hline
-    $q(t) = q(0)\left( 1 - e^{-\frac{t}{\tau_C}}\right)$ & $q(t) = q(0)e^{-\frac{t}{\tau_C}}$ \\ \hline
-    $I(t) = \frac{\epsilon}{R} e^{-\frac{t}{\tau_C}}$ & $I(t) = -\frac{V}{R}e^{-\frac{t}{\tau_C}}$ \\ \hline
-\end{tabular}
-\\
+\underline{Càrrega}: $q(t) = q(0)\left( 1 - e^{-\frac{t}{\tau_C}}\right)$, $I(t) = \frac{\epsilon}{R} e^{-\frac{t}{\tau_C}}$ \\
+\underline{Descàrrega}: $q(t) = q(0)e^{-\frac{t}{\tau_C}}$, $I(t) = -\frac{V}{R}e^{-\frac{t}{\tau_C}}$ \\
 
 $\tau_C = RC$, $q(0) = VC$
 
-\subsubsection*{Solenoides}
+\subsection{Solenoides}
 
 \underline{Flux}: $\Phi = NBS = \frac{\mu_0 N^2SI}{l}$ \\
 \underline{Coeficient d'autoinducció}: $\frac{\Phi}{I} = \frac{\mu_0N^2S}{l}$ \\
 $\epsilon_L= -\frac{\text{d}\Phi}{\text{d}t} = -L \frac{\text{d}I}{\text{d}t}$
 
-\subsection*{Circuits RL}
-
-\begin{tabular}{|c|c|c|c|}
-    \hline
-    Càrrega & Descàrrega \\ \hline \hline
-    $I(t) = \frac{\epsilon}{R} \left(1 - e^{-\frac{t}{\tau_L}}\right)$ & $I(t) = \frac{V}{R}e^{-\frac{t}{\tau_L}}$ \\ \hline
-\end{tabular} \\ \\
+\section{Circuits RL}
+\underline{Càrrega}: $I(t) = \frac{\epsilon}{R} \left(1 - e^{-\frac{t}{\tau_L}}\right)$ \\
+\underline{Descàrrega}: $I(t) = \frac{V}{R}e^{-\frac{t}{\tau_L}}$ \\
 $\tau_L = \frac{L}{R}$
 
-\subsection*{Corrent alterna}
+\section{Corrent alterna}
 \underline{f.e.m. alterna}: $V(t) = V_0\text{cos}(\omega t+\varphi)$, $T = \frac{2\pi}{\omega}$, $I(t) = \frac{V(t)}{R} = \frac{V_0}{R}\text{cos}(\omega t + \varphi) = I_0\text{cos}(\omega t + \varphi)$ \\
 \underline{Flux}: $\Phi = BSN\text{cos}(\omega t+\theta)$, $B$ camp magnètic \\
 \underline{Llei Faraday}: $\epsilon(t) = V_0\text{sin}(\omega t + \theta_0)$ \\
 \underline{Voltatge eficaç}: $V_{ef} = \frac{V_0}{\sqrt{2}}$ \\
 \underline{Intensitat eficaç}: $I_{ef} = \frac{I_0}{\sqrt{2}}$
 
-\subsubsection*{Circuit amb condensador}
+\subsection{Circuit amb condensador}
 \underline{Voltatge}: $V(t) = V_0\text{cos}(\omega t)$ \\
 \underline{Intensitat}: $I(t) = -V_0\omega C \text{sin}(\omega t) = -I_0\text{sin}(\omega t)$ $= I_0\text{cos}(\omega t + \frac{\pi}{2})$ (desfase de $\frac{\pi}{2}$) \\
 Sigui $V(t) = V_0 e^{i\omega t}$, llavors, $I(t) = V_0i\omega Ce^{i\omega t}$. Podem reproduir la llei d'Ohm $(V=IR_C)$, $R_C = \frac{1}{i\omega C}$.\\
 \underline{Reactancia capacitiva}: $X_C = \vert R_C\vert = \frac{1}{\omega C}$, $R_C = \frac{X_C}{i} = -iX_C$
 
-\subsubsection*{Circuit amb inducció}
+\subsection{Circuit amb inducció}
 \underline{Voltatge}: $V(t) = V_0\text{cos}(\omega t)$ \\
 \underline{Autoinducció a la bobina}: $\varepsilon_L = -L \frac{\text{d}I}{\text{d}t}$ \\
 \underline{Segona llei Kirchhoff}: $V(t) + \varepsilon_L = 0 \implies I(t) = \frac{V_0}{L\omega}\text{sin}(\omega t) = I_0\text{cos}(\omega t - \frac{\pi}{2})$ (desfase de $\frac{\pi}{2}$) \\
 Sigui $V(t) = V_0e^{i\omega t}$, llavors, $I = \frac{V_0}{i\omega L}e^{i\omega t}$. Podem reproduir la llei d'Ohm $V=IR_L$, $R_L=i\omega L$. \\
 \underline{Reactancia inductiva}: $X_L = \vert R_L\vert = \omega L$, $R_L = iX_L$
 
-\subsection*{Impedància. Llei d'Ohm}
+\section{Impedància. Llei d'Ohm}
 
 \underline{Llei d'Ohm}: $V = IZ$ \\
 \underline{Impedància}: $\bar{Z} = R + iX \begin{cases} \text{Resistència: } R \\ \text{Condensador: } -iX_C \\ \text{Inducció: } iX_L \end{cases}$
 
-\subsubsection*{Circuit LCR}
+\subsection{Circuit LCR}
 
 \underline{Angle de fase}: tg$(\varphi)=\frac{X_L-X_C}{R}$ \\
 \underline{Corrent máxim}: $I_0 = \frac{\varepsilon_0}{Z}$
 
-\subsection*{Potència}
+\section{Potència}
 
 \underline{Potència instantània}: $P(t) = V(t)I(t) = V_0I_0\text{cos}(\omega t)\text{cos}(\omega t - \varphi)$ \\
 \underline{Potència mitja}: $\frac{V_0I_0}{2\text{cos}(\varphi)} = V_{ef}I_{ef}\text{cos}(\varphi)$
 
-\subsubsection*{Potència en una resistència}
+\subsection{Potència en una resistència}
 
 \underline{No desfase}: $\varphi = 0, V(t) = V_0\text{cos}(\omega t), I(t) = I_0\text{cos}(\omega t)$ \\
 \underline{Potència instanània}: $P(t) = V_0\text{cos}(\omega t)I_0\text{cos}(\omega t) = \frac{V_0^2}{R}\text{cos}^2(\omega t)$ \\
@@ -80,39 +76,39 @@ Sigui $V(t) = V_0e^{i\omega t}$, llavors, $I = \frac{V_0}{i\omega L}e^{i\omega t
 \underline{Valors eficaços}: $V_{ef} = \frac{V_0}{\sqrt{2}}$, $I_{ef} = \frac{I_0}{\sqrt{2}}$ \\
 \underline{Potència dissipada}: $P = \frac{V_{ef}^2}{R} = RI_{ef}^2$
 
-\subsubsection*{Potència en un condensador}
+\subsection{Potència en un condensador}
 
-\underline{Desfase}: $\varphi = -\frac{\pi}{2}, V(t) = V_0\text{cos}(\omega t), I_(t) = I_0\text{cos}(\omega t + \frac{\pi}{2}) = -I_0\text{sin}(\omega t)$ \\
+\underline{Desfase}: $\varphi = -\frac{\pi}{2}, V(t) = V_0\text{cos}(\omega t), I(t) = I_0\text{cos}(\omega t + \frac{\pi}{2}) = -I_0\text{sin}(\omega t)$ \\
 \underline{Potència instantània}: $P(t) = -\frac{V_0^2}{X_C}\text{sin}(\omega t)\text{cos}(\omega t) = -\frac{V_0^2}{2X_C}\text{sin}(2\omega t)$ \\
-\underline{Potència mitja}: 0 \\
+\underline{Potència mitja}: 0
 
-\subsubsection*{Potència en una inducció}
+\subsection{Potència en una inducció}
 
 \underline{Desfase}: $\varphi = \frac{\pi}{2}, V(t) = V_0\text{cos}(\omega t), I(t) = I_0\text{cos}(\omega t - \frac{\pi}{2}) = I_0\text{sin}(\omega t)$ \\
 \underline{Potència instantània}: $P(t) = \frac{V_0^2}{X_L}\text{sin}(\omega t)\text{cos}(\omega t) = \frac{V_0^2}{2X_L}\text{sin}(2\omega t)$ \\
-\underline{Potència mitja}: 0 \\
+\underline{Potència mitja}: 0
 
-\subsubsection*{Potència complexa}
+\subsection{Potència complexa}
 
 $\bar{V} = V_0e^{i\omega t}, \bar{I} = I_0e^{i\omega t - \varphi}, \bar{Z} = Z e^{i\varphi}$ \\
 \underline{Potència complexa}: $\bar{S} = \frac{\bar{V}\bar{I}^*}{2} = \frac{V_0e^{i\omega t}I_0e^{-i(\omega t - \varphi)}}{2} = \frac{V_0I_0}{2}e^{i\varphi} = V_{ef}I_{ef}(\text{cos}(\varphi) + i\text{ sin}(\varphi))$ \\
-\underline{Potència activa}: $P = Re[\bar{S}] = V_{ef}I_{ef}\text{cos}(\varphi)$ [W] \\
-\underline{Potència reactiva}: $Q = Im[\bar{S}] = V_{ef}I_{ef}\text{sin}(\varphi)$ [VA] \\
-\underline{Potència aparent}: $S = \vert \bar{S} \vert = V_{ef}I_{ef}$ [VA] \\
+\underline{Potència activa [W]}: $P = Re[\bar{S}] = V_{ef}I_{ef}\text{cos}(\varphi)$ \\
+\underline{Potència reactiva [VA]}: $Q = Im[\bar{S}] = V_{ef}I_{ef}\text{sin}(\varphi)$ \\
+\underline{Potència aparent [VA]}: $S = \vert \bar{S} \vert = V_{ef}I_{ef}$ \\
 
-\subsubsection*{Factor de potència}
+\subsection{Factor de potència}
 
 \underline{Factor de potència}: $\text{cos}(\varphi) = \frac{P}{S}$ \\
 \underline{Millora del f.d.p. en sèrie}: $Z = R + iX$, connectem $X' = -X$. $(X>0,\varphi>0) \implies C=\frac{1}{\omega X}, (X<0, \varphi<0) \implies L=\frac{\vert X\vert}{\omega}$ \\
-\underline{Millora del f.d.p. en paral·lel}: $X' = -\frac{(R^2+X^2)}{X} = -\frac{Z}{\text{sin}(\varphi)}$ \\
+\underline{Millora del f.d.p. en paral·lel}: $X' = -\frac{(R^2+X^2)}{X} = -\frac{Z}{\text{sin}(\varphi)}$
 
-\subsection*{Superposición de señales. Ancho de banda}
+\section{Superposició de senyals. Amplada de banda}
 
-\underline{Senyal sinusoidal}: $F(t) = A\text{sin}(2\pi ft+ \varphi)$
+\underline{Senyal sinusoidal}: $F(t) = A\text{sin}(2\pi f_1t+ \varphi)$
 \underline{Espectre}: Rang de freqüències del senyal. \\
-\underline{Amplada de banda}: Mida del espectre. \\
-\underline{Freqüència $n$-èssima harmònica}: $f_n = \frac{n\omega_0}{2\pi} = \frac{n}{T}$ \\
-
+\underline{Amplada de banda ($f_b$)}: Mida del espectre. \\
+\underline{Freqüència $n$-èssima} \underline{harmònica}: $f_n = \frac{n\omega_0}{2\pi} = \frac{n}{T}$ \\
+\underline{Velocitat de transmissió} \underline{màxima}: $V_{max} = \frac{1}{T_{bit}} = \frac{1}{2\tau} = \frac{f_b}{2}$ \\
 
 \end{multicols}
 \end{document}
