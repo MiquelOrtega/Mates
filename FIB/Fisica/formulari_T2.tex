@@ -2,7 +2,7 @@
  
 \usepackage[margin=0.8in]{geometry}
 \usepackage[pdftex]{hyperref}
-\usepackage{amsmath,amsthm,amssymb,mathtools,hyperref,enumerate,multicol,mdframed}
+\usepackage{amsmath,amsthm,amssymb,mathtools,hyperref,enumerate,multicol,mdframed,xfrac}
 
 \newmdenv[leftline=false,topline=false]{topright}
 \let\proof\relax
@@ -74,11 +74,45 @@ Sigui $V(t) = V_0e^{i\omega t}$, llavors, $I = \frac{V_0}{i\omega L}e^{i\omega t
 
 \subsubsection*{Potència en una resistència}
 
+\underline{No desfase}: $\varphi = 0, V(t) = V_0\text{cos}(\omega t), I(t) = I_0\text{cos}(\omega t)$ \\
 \underline{Potència instanània}: $P(t) = V_0\text{cos}(\omega t)I_0\text{cos}(\omega t) = \frac{V_0^2}{R}\text{cos}^2(\omega t)$ \\
 \underline{Potència mitja}: $P = \frac{V_0^2}{2R}$ \\
 \underline{Valors eficaços}: $V_{ef} = \frac{V_0}{\sqrt{2}}$, $I_{ef} = \frac{I_0}{\sqrt{2}}$ \\
 \underline{Potència dissipada}: $P = \frac{V_{ef}^2}{R} = RI_{ef}^2$
 
-\section*{Pàgina 59 feta}
+\subsubsection*{Potència en un condensador}
+
+\underline{Desfase}: $\varphi = -\frac{\pi}{2}, V(t) = V_0\text{cos}(\omega t), I_(t) = I_0\text{cos}(\omega t + \frac{\pi}{2}) = -I_0\text{sin}(\omega t)$ \\
+\underline{Potència instantània}: $P(t) = -\frac{V_0^2}{X_C}\text{sin}(\omega t)\text{cos}(\omega t) = -\frac{V_0^2}{2X_C}\text{sin}(2\omega t)$ \\
+\underline{Potència mitja}: 0 \\
+
+\subsubsection*{Potència en una inducció}
+
+\underline{Desfase}: $\varphi = \frac{\pi}{2}, V(t) = V_0\text{cos}(\omega t), I(t) = I_0\text{cos}(\omega t - \frac{\pi}{2}) = I_0\text{sin}(\omega t)$ \\
+\underline{Potència instantània}: $P(t) = \frac{V_0^2}{X_L}\text{sin}(\omega t)\text{cos}(\omega t) = \frac{V_0^2}{2X_L}\text{sin}(2\omega t)$ \\
+\underline{Potència mitja}: 0 \\
+
+\subsubsection*{Potència complexa}
+
+$\bar{V} = V_0e^{i\omega t}, \bar{I} = I_0e^{i\omega t - \varphi}, \bar{Z} = Z e^{i\varphi}$ \\
+\underline{Potència complexa}: $\bar{S} = \frac{\bar{V}\bar{I}^*}{2} = \frac{V_0e^{i\omega t}I_0e^{-i(\omega t - \varphi)}}{2} = \frac{V_0I_0}{2}e^{i\varphi} = V_{ef}I_{ef}(\text{cos}(\varphi) + i\text{ sin}(\varphi))$ \\
+\underline{Potència activa}: $P = Re[\bar{S}] = V_{ef}I_{ef}\text{cos}(\varphi)$ [W] \\
+\underline{Potència reactiva}: $Q = Im[\bar{S}] = V_{ef}I_{ef}\text{sin}(\varphi)$ [VA] \\
+\underline{Potència aparent}: $S = \vert \bar{S} \vert = V_{ef}I_{ef}$ [VA] \\
+
+\subsubsection*{Factor de potència}
+
+\underline{Factor de potència}: $\text{cos}(\varphi) = \frac{P}{S}$ \\
+\underline{Millora del f.d.p. en sèrie}: $Z = R + iX$, connectem $X' = -X$. $(X>0,\varphi>0) \implies C=\frac{1}{\omega X}, (X<0, \varphi<0) \implies L=\frac{\vert X\vert}{\omega}$ \\
+\underline{Millora del f.d.p. en paral·lel}: $X' = -\frac{(R^2+X^2)}{X} = -\frac{Z}{\text{sin}(\varphi)}$ \\
+
+\subsection*{Superposición de señales. Ancho de banda}
+
+\underline{Senyal sinusoidal}: $F(t) = A\text{sin}(2\pi ft+ \varphi)$
+\underline{Espectre}: Rang de freqüències del senyal. \\
+\underline{Amplada de banda}: Mida del espectre. \\
+\underline{Freqüència $n$-èssima harmònica}: $f_n = \frac{n\omega_0}{2\pi} = \frac{n}{T}$ \\
+
+
 \end{multicols}
 \end{document}
