@@ -136,6 +136,7 @@ principales conjuntos.
 | \E | Un espacio vectorial |
 | \Po | Un espacio proyectivo |
 | \k | Un cuerpo cualquiera |
+| \R | Un sistema de referencia |
 
 ### Otras utilidades
 | Comando | Argumentos | Descripción |
