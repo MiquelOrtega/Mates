@@ -1309,7 +1309,7 @@ con $a,b \neq 0$. Calculamos ahora $x_0$, $x_1$ y $x_
  $\Phi(\Psi(H)) = H$ y $\Psi(\Phi(p)) = p$, esd decir, $\Phi$ y $\Psi$ son inversas mutuas.
 \end{obs}
 
-\begin{thm}[de la invariancia de razón doble]\label{thm:inv_rz_do}
+\begin{thm}[de la invariancia de razón doble]
  Sean $V,r \subseteq \Po^n$ dos variades suplementarias con $\dim r = 1$ ($\implies \dim V = n-2$) y
  sean $\Phi$ y $\Psi$ la proyección desde $V$ y la sección con $r$ respectivamente. Entonces,
  \begin{enumerate}[i)]
@@ -1373,7 +1373,7 @@ con $a,b \neq 0$. Calculamos ahora $x_0$, $x_1$ y $x_
  \]
 \end{defi}
 
-\begin{prop}\label{prop:intercambio_raz_do}
+\begin{prop}
  Sean $p_1,p_2,p_3,p_4 \in \Po^n$ diferentes dos a dos. Entonces, son eqivalentes
  \begin{enumerate}[i)]
   \item $\rho = (p_1,p_2,p_3,p_4) = -1$
@@ -1435,18 +1435,14 @@ con $a,b \neq 0$. Calculamos ahora $x_0$, $x_1$ y $x_
  definimos $\Phi_B$ la proyección desde $B$, $\Phi_D$ la proyección desde $D$ y $\Psi_s$ y $\Psi_r$ la sección
  con $r$ y con $s$ respectivamente. entonces
  \[
-  \begin{array}{ccc}
+  \begin{aligned}
    r & \stackrel{\Psi_s \circ \Phi_B}{\to} s & \stackrel{\Psi_r \circ \Phi_D}{\to} r \\
    p_1 &\mapsto C &\mapsto p_2 \\
    p_2 &\mapsto A &\mapsto p_1 \\
    p_3 &\mapsto p_3 &\mapsto p_3 \\
    p_4 &\mapsto O &\mapsto p_4
-  \end{array}
+  \end{aligned}
+
  \]
- Por el teorema \ref{thm:inv_rz_do}, tenemos que, si $f = \Psi_r \circ \Phi_D \circ \Psi_s \circ \Phi_B$,
- \[
-  (p_1,p_2,p_3,p_4) = \left( f(p_1), f(p_2), f(p_3), f(p_4) \right) = (p_2,p_1,p_3,p_4)
- \]
- Y por la proposición \ref{prop:intercambio_raz_do}, tenemos que $\setb{p_1,p_2,p_3,p_4}$ es una cuaterna
- armónica.
+
 \end{proof}
