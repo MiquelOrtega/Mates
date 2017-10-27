@@ -17,21 +17,21 @@
 \begin{multicols}{5}
 \section{Circuits RC}
 
-\underline{Càrrega}: $q(t) = q(0)\left( 1 - e^{-\frac{t}{\tau_C}}\right)$, $I(t) = \frac{\epsilon}{R} e^{-\frac{t}{\tau_C}}$ \\
-\underline{Descàrrega}: $q(t) = q(0)e^{-\frac{t}{\tau_C}}$, $I(t) = -\frac{V}{R}e^{-\frac{t}{\tau_C}}$ \\
+\underline{Càrrega}: $q(t) = VC\left( 1 - e^{-\frac{t}{\tau_C}}\right)$, $I(t) = \frac{\epsilon}{R} e^{-\frac{t}{\tau_C}}$ \\
+\underline{Descàrrega}: $q(t) = VCe^{-\frac{t}{\tau_C}}$, $I(t) = -\frac{V}{R}e^{-\frac{t}{\tau_C}}$ \\
 
 $\tau_C = RC$, $q(0) = VC$
+
+\section{Circuits RL}
+\underline{Càrrega}: $I(t) = \frac{\epsilon}{R_{\text{est}}} \left(1 - e^{-\frac{t}{\tau_L}}\right)$ \\
+\underline{Descàrrega}: $I(t) = \frac{V}{R_{\text{est}}}e^{-\frac{t}{\tau_L}}$ \\
+$\tau_L = \frac{L}{R}, R_{\text{est}} = R + r$
 
 \subsection{Solenoides}
 
 \underline{Flux}: $\Phi = NBS = \frac{\mu_0 N^2SI}{l}$ \\
-\underline{Coeficient d'autoinducció}: $\frac{\Phi}{I} = \frac{\mu_0N^2S}{l}$ \\
+\underline{Coeficient d'autoinducció}: $L = \frac{\Phi}{I} = \frac{\mu_0N^2S}{l}$ \\
 $\epsilon_L= -\frac{\text{d}\Phi}{\text{d}t} = -L \frac{\text{d}I}{\text{d}t}$
-
-\section{Circuits RL}
-\underline{Càrrega}: $I(t) = \frac{\epsilon}{R} \left(1 - e^{-\frac{t}{\tau_L}}\right)$ \\
-\underline{Descàrrega}: $I(t) = \frac{V}{R}e^{-\frac{t}{\tau_L}}$ \\
-$\tau_L = \frac{L}{R}$
 
 \section{Corrent alterna}
 \underline{f.e.m. alterna}: $V(t) = V_0\text{cos}(\omega t+\varphi)$, $T = \frac{2\pi}{\omega}$, $I(t) = \frac{V(t)}{R} = \frac{V_0}{R}\text{cos}(\omega t + \varphi) = I_0\text{cos}(\omega t + \varphi)$ \\
@@ -60,7 +60,7 @@ Sigui $V(t) = V_0e^{i\omega t}$, llavors, $I = \frac{V_0}{i\omega L}e^{i\omega t
 
 \subsection{Circuit LCR}
 
-\underline{Angle de fase}: tg$(\varphi)=\frac{X_L-X_C}{R}$ \\
+\underline{Angle de fase}: tg$(\varphi)=\frac{X_L-X_C}{R}, ("I" + \varphi = "U")$ \\
 \underline{Corrent máxim}: $I_0 = \frac{\varepsilon_0}{Z}$
 
 \section{Potència}
@@ -94,7 +94,7 @@ $\bar{V} = V_0e^{i\omega t}, \bar{I} = I_0e^{i\omega t - \varphi}, \bar{Z} = Z e
 \underline{Potència complexa}: $\bar{S} = \frac{\bar{V}\bar{I}^*}{2} = \frac{V_0e^{i\omega t}I_0e^{-i(\omega t - \varphi)}}{2} = \frac{V_0I_0}{2}e^{i\varphi} = V_{ef}I_{ef}(\text{cos}(\varphi) + i\text{ sin}(\varphi))$ \\
 \underline{Potència activa [W]}: $P = Re[\bar{S}] = V_{ef}I_{ef}\text{cos}(\varphi)$ \\
 \underline{Potència reactiva [VA]}: $Q = Im[\bar{S}] = V_{ef}I_{ef}\text{sin}(\varphi)$ \\
-\underline{Potència aparent [VA]}: $S = \vert \bar{S} \vert = V_{ef}I_{ef}$ \\
+\underline{Potència aparent [VA]}: $S = \vert \bar{S} \vert = V_{ef}I_{ef}$
 
 \subsection{Factor de potència}
 
