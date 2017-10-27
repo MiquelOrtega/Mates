@@ -3,4 +3,5 @@
 *.out
 *.toc
 *.aux
+*.auxlock
 *.directory
