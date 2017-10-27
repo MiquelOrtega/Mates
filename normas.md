@@ -11,6 +11,8 @@ hemos creado y bajo ningún concepto se deben tomar como
 unas directrices a seguir fuera de este contexto ni
 se debe asumir que sean "buenas prácticas".**
 
+## Para evitar tiempos de compilación infinitos, utiliza el comando `make`
+
 ## Índice
 * **Proposiciones, teoremas y demás**
 * **Comandos útiles**
