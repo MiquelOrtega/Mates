@@ -22,10 +22,9 @@
 \underline{Descàrrega}: $q(t) = VCe^{-\frac{t}{\tau_C}}$, $I(t) = -\frac{V}{R}e^{-\frac{t}{\tau_C}}$ \\
 
 $\tau_C = RC$
-
 \subsection{Condensadors}
 
-\underline{Energia electroestàtica}: $E = \frac{1}{2}CV_C^2$
+\underline{Energia electroestàtica}: $W = E = \frac{1}{2}CV_C^2 = \frac{1}{2}\frac{Q^2}{C}$
 
 \section{Circuits RL}
 \underline{Càrrega}: $I(t) = \frac{\varepsilon}{R_{\text{est}}} \left(1 - e^{-\frac{t}{\tau_L}}\right)$ \\
@@ -102,7 +101,7 @@ $V(t) = V_0e^{i\omega t}$, $\implies I = \frac{V_0}{i\omega L}e^{i\omega t}$ \\
 
 \subsection{Potència complexa}
 
-$\bar{V} = V_0e^{i\omega t}, \bar{I} = I_0e^{i\omega t - \varphi}, \bar{Z} = Z e^{i\varphi}$ \\
+$\bar{V} = V_0e^{i\omega t}, \bar{I} = I_0e^{i(\omega t - \varphi)}, \bar{Z} = Z e^{i\varphi}$ \\
 \underline{Potència complexa}: $\bar{S} = \frac{\bar{V}\bar{I}^*}{2} = \frac{V_0e^{i\omega t}I_0e^{-i(\omega t - \varphi)}}{2} = \frac{V_0I_0}{2}e^{i\varphi} = V_{\text{ef}}I_{\text{ef}}(\text{cos}(\varphi) + i\text{ sin}(\varphi))$ \\
 \underline{Potència activa [W]}: $P = \text{Re}[\bar{S}] = V_{\text{ef}}I_{\text{ef}}\text{cos}(\varphi)$ \\
 \underline{Potència reactiva [VA]}: $Q = \text{Im}[\bar{S}] = V_{\text{ef}}I_{\text{ef}}\text{sin}(\varphi)$ \\
@@ -122,6 +121,5 @@ $\bar{V} = V_0e^{i\omega t}, \bar{I} = I_0e^{i\omega t - \varphi}, \bar{Z} = Z e
 \underline{Freqüència $n$-èssima} \underline{harmònica}: $f_n = \frac{n\omega_0}{2\pi} = \frac{n}{T}$ \\
 \underline{Pols}: Un cicle. \\
 \underline{Velocitat de transmissió} \underline{màxima}: $v_\text{max} = \frac{1}{T_\text{bit}} = \frac{1}{2\tau} = \frac{f_b}{2}, T_{\text{bit}} = 2 \tau$ \\
-
 \end{multicols}
 \end{document}
