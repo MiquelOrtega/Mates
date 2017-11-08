@@ -152,6 +152,9 @@ principales conjuntos.
 | \Id | 0 | Coloca la identidad |
 | \bb | 1 | Coloca el argumento en funte de conjunto |
 | \cal | 1 | Coloca el argumento en fuente caligrafica |
+| \im | 0 | Coloca Im |
+| \rg | 0 | Coloca rg |
+| \car | 0 | Coloca car |
 
 ## Fragmentos comunes
 Aquí se detalla una serie de fragmentos que suelen comunes
