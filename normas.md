@@ -137,6 +137,7 @@ principales conjuntos.
 | \real | Conjunto de los números reales |
 | \E | Un espacio vectorial |
 | \Po | Un espacio proyectivo |
+| \Pa | Una partición |
 | \k | Un cuerpo cualquiera |
 | \R | Un sistema de referencia |
 
@@ -155,6 +156,7 @@ principales conjuntos.
 | \im | 0 | Coloca Im |
 | \rg | 0 | Coloca rg |
 | \car | 0 | Coloca car |
+| \vol | 0 | Coloca vol |
 
 ## Fragmentos comunes
 Aquí se detalla una serie de fragmentos que suelen comunes
