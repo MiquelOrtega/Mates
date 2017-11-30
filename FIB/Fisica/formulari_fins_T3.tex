@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[landscape,margin=0.5in,top=0.5in,bottom=0.5in,a4paper]{geometry}
+\usepackage{amsmath,multicol,titlesec,graphicx,listings}
+
+\usepackage[utf8]{inputenc}
+\titlespacing{\section}{0pt}{5pt}{0pt}
+\titlespacing{\subsection}{0pt}{5pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{5pt}{0pt}
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\bfseries}
+\setlength{\columnseprule}{1pt}
+ 
+\begin{document}
+\raggedright
+\begin{multicols}{2}
+
+\subsection*{Tema 1}
+\includegraphics[width=\linewidth]{Auxiliar/t1.pdf}
+\noindent\rule{\linewidth}{1pt}
+\subsection*{Tema 3}
+\includegraphics[width=\linewidth]{Auxiliar/t3fib.pdf}
+\includegraphics[width=14.5cm]{Auxiliar/t2i3_latex.pdf}
+
+\end{multicols}
+\end{document}
+\grid
